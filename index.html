@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <span id="logo">SNAKE GAME</span>
+        <canvas id="snake" width="512" height="512"></canvas>
+        <div class="score">
+            Pontuação:
+            <span id="score">0</span>
+        </div>
+        <div class="botoes">
+            <div id="iniciar" class="botao" onclick="reset()"> Iniciar</div>
+            <div class="setas">
+                <div class="botao seta" onclick="arrow('up')">&#8593;</div>
+                <span id="laterais">
+                    <div class="botao seta" onclick="arrow('left')">&#8592;</div>
+                    <div class="botao seta" onclick="arrow('right')">&#8594;</div>
+                </span>
+                <div class="botao seta" onclick="arrow('down')">&#8595;</div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

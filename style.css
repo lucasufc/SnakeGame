@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+* { margin: 0px; padding: 0px; } html { height: 100vh; }
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+canvas {
+    border: 3px solid rgb(73, 73, 73);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 35px 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.score {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-family: 'Bungee', cursive;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    color: green;
+}
+.botoes {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.botao {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border-radius: 50%;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.botao:active{
+    background-color: #af1130;
+    -webkit-box-shadow: inset 4px 4px 15px 0px #0000008f, 5px 5px 0px 5px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #0000008f, 5px 5px 0px 5px rgba(0,0,0,0);
+}
+
+.setas{
+    -webkit-box-shadow: inset 4px 4px 15px 0px #0000001f, 5px 5px 0px 5px rgba(0,0,0,0); 
+    box-shadow: inset 4px 4px 15px 0px #0000001a, 5px 5px 0px 5px rgba(0,0,0,0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #9c9c9c;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+}
+#laterais {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#iniciar {
+    width: 90px;
+    height: 90px;
+    text-transform: uppercase;
+    transform: rotate(-25deg);
+}
